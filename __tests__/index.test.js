@@ -12,14 +12,14 @@ const file1 = getFixturePath('file1.json');
 const file2 = getFixturePath('file2.json');
 
 const expected = `{
-    - follow: false
-      host: hexlet.io
-    - proxy: 123.234.53.22
-    - timeout: 50
-    + timeout: 20
-    + verbose: true
-    }`;
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}`;
 
-test('test one', () => {
+test('testOne', () => {
   expect(genDiff(file1, file2)).toEqual(expected);
 });

@@ -1,36 +1,28 @@
 /* eslint-disable array-callback-return */
 import _ from 'lodash';
-import fs from 'fs';
-import path from 'path';
-import process from 'process';
-
-const getPath = (filepath) => path.resolve(process.cwd(), './__fixtures__', filepath);
-const readFile = (filepath) => fs.readFileSync(getPath(filepath), 'utf-8');
+import parser from './parsers.js';
 
 const genDiff = (filepath1, filepath2) => {
-  const readFile1 = readFile(filepath1);
-  const readFile2 = readFile(filepath2);
+  const file1 = parser(filepath1);
+  const file2 = parser(filepath2);
 
-  const file1Obj = JSON.parse(readFile1);
-  const file2Obj = JSON.parse(readFile2);
-
-  const keysfile1 = _.keys(file1Obj);
-  const keysfile2 = _.keys(file2Obj);
+  const keysfile1 = _.keys(file1);
+  const keysfile2 = _.keys(file2);
   const sortUniqKeys = _.sortBy(_.uniq([...keysfile1, ...keysfile2]));
 
   // eslint-disable-next-line consistent-return
   const compare = sortUniqKeys.map((key) => {
-    if (!_.has(file2Obj, key)) {
-      return `  - ${key}: ${file1Obj[key]}`;
+    if (!_.has(file2, key)) {
+      return `  - ${key}: ${file1[key]}`;
     }
-    if (!_.has(file1Obj, key)) {
-      return `  + ${key}: ${file2Obj[key]}`;
+    if (!_.has(file1, key)) {
+      return `  + ${key}: ${file2[key]}`;
     }
-    if (file1Obj[key] === file2Obj[key]) {
-      return `    ${key}: ${file1Obj[key]}`;
+    if (file1[key] === file2[key]) {
+      return `    ${key}: ${file1[key]}`;
     }
-    if (file1Obj[key] !== file2Obj[key]) {
-      return `  - ${key}: ${file1Obj[key]}\n  + ${key}: ${file2Obj[key]}`;
+    if (file1[key] !== file2[key]) {
+      return `  - ${key}: ${file1[key]}\n  + ${key}: ${file2[key]}`;
     }
   });
 

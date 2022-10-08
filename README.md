@@ -13,6 +13,10 @@
 
 [![asciicast](https://asciinema.org/a/524999.svg)](https://asciinema.org/a/524999)
 
-<h3>difference between files with nested structure</h3>
+<h3>difference between files with nested structure in format 'stylish'</h3>
 
 [![asciicast](https://asciinema.org/a/526634.svg)](https://asciinema.org/a/526634)
+
+<h3>difference between files with nested structure in format 'plain'</h3>
+
+[![asciicast](https://asciinema.org/a/526662.svg)](https://asciinema.org/a/526662)

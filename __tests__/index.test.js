@@ -15,8 +15,14 @@ const file1yml = getFixturePath('file1.yml');
 const file2yml = getFixturePath('file2.yml');
 
 const expected1 = fs.readFileSync(getFixturePath('testExpectedStylish.txt'), 'utf8');
+const expected2 = fs.readFileSync(getFixturePath('testExpectedPlain.txt'), 'utf8');
 
 test('stylish', () => {
   expect(genDiff(file1, file2, 'stylish')).toEqual(expected1.trim());
   expect(genDiff(file1yml, file2yml, 'stylish')).toEqual(expected1.trim());
+});
+
+test('plain', () => {
+  expect(genDiff(file1, file2, 'plain')).toEqual(expected2.trim());
+  expect(genDiff(file1yml, file2yml, 'plain')).toEqual(expected2.trim());
 });

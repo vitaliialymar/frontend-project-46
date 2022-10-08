@@ -8,6 +8,9 @@ const chooseFormat = (data, format = 'stylish') => {
   if (format === 'plain') {
     return plain(data);
   }
+  if (format === 'json') {
+    return JSON.stringify(data);
+  }
   return 'Error! Unknown format!';
 };
 

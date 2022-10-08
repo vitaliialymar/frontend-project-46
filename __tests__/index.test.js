@@ -16,13 +16,24 @@ const file2yml = getFixturePath('file2.yml');
 
 const expected1 = fs.readFileSync(getFixturePath('testExpectedStylish.txt'), 'utf8');
 const expected2 = fs.readFileSync(getFixturePath('testExpectedPlain.txt'), 'utf8');
+const expected3 = fs.readFileSync(getFixturePath('testExpectedJson.txt'), 'utf8');
 
 test('stylish', () => {
-  expect(genDiff(file1, file2, 'stylish')).toEqual(expected1.trim());
-  expect(genDiff(file1yml, file2yml, 'stylish')).toEqual(expected1.trim());
+  expect(genDiff(file1, file2, 'stylish')).toEqual(expected1);
+  expect(genDiff(file1, file2)).toEqual(expected1);
+  expect(genDiff(file1yml, file2yml, 'stylish')).toEqual(expected1);
 });
 
 test('plain', () => {
-  expect(genDiff(file1, file2, 'plain')).toEqual(expected2.trim());
-  expect(genDiff(file1yml, file2yml, 'plain')).toEqual(expected2.trim());
+  expect(genDiff(file1, file2, 'plain')).toEqual(expected2);
+  expect(genDiff(file1yml, file2yml, 'plain')).toEqual(expected2);
+});
+
+test('json', () => {
+  expect(genDiff(file1, file2, 'json')).toEqual(expected3);
+  expect(genDiff(file1yml, file2yml, 'json')).toEqual(expected3);
+});
+
+test('unknown format', () => {
+  expect(genDiff(file1, file2, 'wrong format')).toEqual('Error! Unknown format!');
 });

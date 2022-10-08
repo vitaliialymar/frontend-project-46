@@ -20,3 +20,7 @@
 <h3>difference between files with nested structure in format 'plain'</h3>
 
 [![asciicast](https://asciinema.org/a/526662.svg)](https://asciinema.org/a/526662)
+
+<h3>difference between files with nested structure in format 'json'</h3>
+
+[![asciicast](https://asciinema.org/a/526688.svg)](https://asciinema.org/a/526688)

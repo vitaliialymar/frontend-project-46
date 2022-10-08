@@ -12,3 +12,7 @@
 <h3>difference between yml files</h3>
 
 [![asciicast](https://asciinema.org/a/524999.svg)](https://asciinema.org/a/524999)
+
+<h3>difference between files with nested structure</h3>
+
+[![asciicast](https://asciinema.org/a/526634.svg)](https://asciinema.org/a/526634)

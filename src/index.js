@@ -6,7 +6,7 @@ import getDiff from './getDiff.js';
 import chooseFormat from './formatters/chooseFormat.js';
 
 const getData = (filepath) => fs.readFileSync(path.resolve(process.cwd(), './__fixtures__', filepath), 'utf8');
-const getFormat = (filepath) => filepath.split('.').pop();
+const getFormat = (filepath) => filepath.split('.')[1];
 
 const genDiff = (filepath1, filepath2, format = 'stylish') => {
   const file1 = parser(getData(filepath1), getFormat(filepath1));

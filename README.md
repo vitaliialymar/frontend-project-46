@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/vitaliialymar/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions)  [![lint and tests](https://github.com/vitaliialymar/frontend-project-46/actions/workflows/gitHub-actions.yml/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions/workflows/gitHub-actions.yml)
+[![Actions Status](https://github.com/vitaliialymar/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions)  [![linter and tests](https://github.com/vitaliialymar/frontend-project-46/actions/workflows/gitHub-actions.yml/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions/workflows/gitHub-actions.yml)
   <a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/maintainability" /></a>  <a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/test_coverage" /></a>
 
 <h1>This is a CLI utility that determines the difference in the data structure of two files.</h1>

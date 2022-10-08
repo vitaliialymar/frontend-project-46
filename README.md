@@ -1,9 +1,6 @@
 ### Hexlet tests and linter status:
-[![Actions Status](https://github.com/vitaliialymar/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions)
-
-<a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/maintainability" /></a>
-
-<a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/test_coverage" /></a>
+[![Actions Status](https://github.com/vitaliialymar/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions)  [![Actions Status](https://github.com/vitaliialymar/frontend-project-46/workflows/gitHub-actions/badge.svg)](https://github.com/vitaliialymar/frontend-project-46/actions)
+  <a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/maintainability"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/maintainability" /></a>  <a href="https://codeclimate.com/github/vitaliialymar/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2f8400fe2af51b4197cb/test_coverage" /></a>
 
 <h3>difference between json files</h3>
 

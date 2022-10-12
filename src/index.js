@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import path from 'path';
 import fs from 'fs';
 import parser from './parsers.js';

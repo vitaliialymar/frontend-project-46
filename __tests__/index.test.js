@@ -33,7 +33,3 @@ test('json', () => {
   expect(genDiff(file1, file2, 'json')).toEqual(expected3);
   expect(genDiff(file1yml, file2yml, 'json')).toEqual(expected3);
 });
-
-test('unknown format', () => {
-  expect(genDiff(file1, file2, 'wrong format')).toEqual('Error! Unknown format!');
-});

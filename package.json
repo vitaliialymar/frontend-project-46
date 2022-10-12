@@ -20,10 +20,7 @@
   "dependencies": {
     "commander": "^9.4.0",
     "js-yaml": "^4.1.0",
-    "lodash": "^4.17.21",
-    "make": "^0.8.1",
-    "n": "^9.0.0",
-    "stable": "^0.1.8"
+    "lodash": "^4.17.21"
   },
   "bin": {
     "gendiff": "bin/gendiff.js"

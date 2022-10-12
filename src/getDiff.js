@@ -3,7 +3,6 @@ import _ from 'lodash';
 const getDiff = (data1, data2) => {
   const keys = _.sortBy(_.union(_.keys(data1), _.keys(data2)));
 
-  // eslint-disable-next-line no-restricted-syntax, array-callback-return
   const result = keys.map((key) => {
     if (typeof data1[key] === 'object' && typeof data2[key] === 'object') {
       return { key, children: getDiff(data1[key], data2[key]), type: 'nested' };
